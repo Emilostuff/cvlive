@@ -10,7 +10,7 @@ class EdgeDetector(LiveImageProcessor):
 
     def process(self):
         # input filtering
-        median = cv2.medianBlur(self.input, 5)
+        median = cv2.medianBlur(self.input, 11)
         gaussian = cv2.GaussianBlur(median, (3, 3), 0)
 
         # Edge detection using a Prewitt filter

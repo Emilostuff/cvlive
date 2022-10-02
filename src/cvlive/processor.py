@@ -19,7 +19,7 @@ class LiveImageProcessor:
     - `convert()`
     - `process()`
     - `display()`
-    - `update_reference()`
+    - `update()`
 
     The constructor `__init__()` can also be overridden,
     but then remember to call `super().__init__()` in the new constructor.
@@ -106,7 +106,7 @@ class LiveImageProcessor:
         """
         cv2.imshow("Output", annotate(self.result_buf, [f"FPS: {self.fps}"]))
 
-    def update_reference(self):
+    def update(self):
         """Updates the previous image (reference).
 
         How to Override
@@ -135,7 +135,7 @@ class LiveImageProcessor:
             # update frame count
             self.n_frames += 1
             # shift buffers
-            self.update_reference()
+            self.update()
             self.input = self.input_buf
             self.result_buf = self.result
             # launch separate thread processing the frame
