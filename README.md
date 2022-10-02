@@ -13,9 +13,9 @@ pip install cvlive
 - Create a subclass of `LiveImageProcessor`
 - Override one or more of the class methods: `convert()`, `process()`, `display()` and `update()` to obtain the desired functionality
 
-Please take a look at the examples and consult the documentation found in the `LiveImageProcessor` base class to see how this might be done.
+Please take a look at the [examples](https://github.com/Emilostuff/cvlive/tree/main/examples) and consult the documentation found in the [`LiveImageProcessor`](https://github.com/Emilostuff/cvlive/blob/main/src/cvlive/processor.py) base class to see how this might be done.
 
-# Example
+# A Simple Example
 ```python
 from cvlive import LiveImageProcessor
 import cv2

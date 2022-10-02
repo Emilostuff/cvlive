@@ -9,7 +9,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="cvlive",
-    version="0.1.1",
+    version="0.1.2",
     description="A multithreaded live image processor in Python running OpenCV",
     long_description=long_description,
     long_description_content_type="text/markdown",
