@@ -1,5 +1,5 @@
 # CVLive
-A multithreaded live image processor in Python running OpenCV that processes images from a webcam or another video source and shows the results in 'real time'. A separate thread handles the processing while the main thread displays the previous result and captures the next input, resulting in significant performance gains on a multi-core CPU. 
+A multithreaded live image processor in Python running OpenCV that processes images from a webcam or another video source and shows the results in 'real time'. A separate thread handles the processing while the main thread displays the previous result and captures the next input, resulting in significant performance gains. 
 
 CVLive makes it possible to create live demos of a wide variety of image processing concepts *in only a few lines of code*. 
 
